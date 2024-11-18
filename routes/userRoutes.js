@@ -8,7 +8,7 @@ import post from "../controllers/post.js";
 const router = express.Router();
 
 router.post("/register", registerUser);
-router.put("/update-profile", updateProfile);
+router.put("/update-profile/:userId", updateProfile);
 router.patch("/update-email/:userId", updateEmail);
 router.get("/get-info", getInfo);
 router.delete("/delete-account", deleteAccount);
