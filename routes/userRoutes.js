@@ -9,7 +9,7 @@ const router = express.Router();
 
 router.post("/register", registerUser);
 router.put("/update-profile", updateProfile);
-router.patch("/update-email", updateEmail);
+router.patch("/update-email/:userId", updateEmail);
 router.get("/get-info", getInfo);
 router.delete("/delete-account", deleteAccount);
 router.get("/post/:postId", post);
