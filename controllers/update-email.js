@@ -27,7 +27,7 @@ async function updateEmail(req, res) {
     );
 
     console.log(updateStudentRecord);
-    res.status(201).json({ message: "Email updated successfully" });
+    return res.status(201).json({ message: "Email updated successfully" });
   } catch (error) {
     console.log(error);
     res.status(500).json({ message: "Sorry an error occured" });
