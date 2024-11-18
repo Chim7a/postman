@@ -52,7 +52,7 @@ async function updateProfile(req, res) {
       .json({ message: `An account with id ${userId} does not exist.` });
   }
 
-  //
+  // Update the student profile.
   try {
     const studentProfileUpdate = await Students.findByIdAndUpdate(userId, {
       firstName: firstName,
